@@ -6,7 +6,7 @@
 }
 .pizza {
   cursor: pointer;
-  color: Black;
+  color: Red;
 }
 
 .pizza:hover {
