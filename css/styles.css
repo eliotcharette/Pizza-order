@@ -8,7 +8,6 @@
   cursor: pointer;
   color: #7E0000;
 }
-
 .pizza:hover {
   text-decoration: underline;
 }
@@ -37,4 +36,8 @@ body {
 #price{
   border-style: solid;
   border-width: 1px;
+}
+.delete{
+  cursor: pointer;
+  color: red;
 }

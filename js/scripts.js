@@ -57,7 +57,6 @@ $("input#check3").change(function() {
 //purchase button
   $("form#pizza-order").submit(function(event) {
     event.preventDefault();
-
     var nameinput = $("input#name").val();
     var sizeinput = $("select#size").val();
     var numberinput = $("select#number").val();
@@ -65,8 +64,14 @@ $("input#check3").change(function() {
     var top2input = $("input#2top").val();
     var top3input = $("input#3top").val();
     var newPizza = new Pizza(nameinput, sizeinput, numberinput, top1input, top2input, top3input)
-
-    $("h3#ordered").append("<li><span class='pizza'>" + "Thank you, " + newPizza.name + " click here to see your order" + "</span></li>")
+//append order name and delete function
+    $("h3#ordered").append("<li><span class='pizza'>" + "Thank you, " + newPizza.name + " click here to see your order" + "</span> | <a class='delete'>Oops delete this order!</a></li>")
+    $(".delete").last().click(function() {
+      $(this).parent().remove();
+      if ($("#show-order h2").text() == newPizza.name) {
+        $("#show-order").hide();
+      }
+    });
 //showorder
     $(".pizza").last().click(function() {
       $("#show-order").show();
