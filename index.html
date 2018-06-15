@@ -29,7 +29,7 @@
             </div>
             <div class="form-group">
               <h4><strong>How many toppings would you like:</strong></h4>
-              <select class="form-control" id="number-toppings">
+              <select class="form-control" id="number">
                 <option>1 topping</option>
                 <option>2 toppings ($1.00)</option>
                 <option>3 toppings ($2.00)</option>
@@ -48,7 +48,19 @@
                 <option>Onions</option>
               </select>
             </div>
+            <button type="submit" class="btn btn-success">Purchase</button>
           </form>
+          <h3 id="ordered"></h3>
+        </div>
+        <div class="col-md-6">
+          <div id="show-order">
+            <h2></h2>
+            <ul>
+              <li><strong>Thank you for your order, </strong><span id="listname"></span></li>
+              <li><span id="listsize"></span>, <span id="listnumber"></span>, <span id="listtoppings"></span></li>
+              <li>Your purchase total is:</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
