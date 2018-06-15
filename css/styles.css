@@ -1,11 +1,27 @@
 #show-order {
   display: none;
 }
+.container {
+  color: #7E0000;
+}
 .pizza {
   cursor: pointer;
-  color: #0088cc;
+  color: Black;
 }
 
 .pizza:hover {
   text-decoration: underline;
+}
+.title{
+  text-align: center;
+  font-style: italic;
+  font-size: 60px;
+}
+body {
+  background-image: url("../img/pizza3.png");
+}
+.quote{
+  font-size: 30px;
+  font-family: cursive;
+  text-align: center;
 }
