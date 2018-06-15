@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+    <title>Pizza Order</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Italiano's Pizza Kitchen</h1>
+      <h2>Place your order below</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="pizza-order">
+            <div class="form-group">
+              <h4><strong>Name for the order:</strong></h4>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+              <h4><strong>Pick your size:</strong></h4>
+              <select class="form-control" id="size">
+                <option>Personal ($10.00)</option>
+                <option>Medium ($15.00)</option>
+                <option>Large ($20.00)</option>
+                <option>X-Large ($25.00)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <h4><strong>How many toppings would you like:</strong></h4>
+              <select class="form-control" id="number-toppings">
+                <option>1 topping</option>
+                <option>2 toppings ($1.00)</option>
+                <option>3 toppings ($2.00)</option>
+                <option>Unlimited ($5.00)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <h4><strong>Pick your toppings</strong></h4>
+              <select class="form-control" id="toppings">
+                <option>Cheese Only</option>
+                <option>Pepperoni</option>
+                <option>Margherita</option>
+                <option>Peppers</option>
+                <option>Olives</option>
+                <option>Salami</option>
+                <option>Onions</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
