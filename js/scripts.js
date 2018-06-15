@@ -3,7 +3,13 @@ function Pizza(name, size, number, toppings) {
   this.name = name;
   this.size = size;
   this.number = number;
-  this.toppings = toppings;
+  this.toppings = [];
+}
+function Toppings(top1, top2, top3, ulimited) {
+  this.top1 = top1;
+  this.top2 = top2;
+  this.top3 = top3;
+  this.unlimited = unlimited;
 }
 
 
