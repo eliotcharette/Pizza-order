@@ -6,13 +6,13 @@
 
 ## Description
 
-_Program will allow user enter name
-Program will allow user to pick a type of pizza
-program will allow user to pick a size of pizza
-program will allow user to select toppings
-program will clear form after info is submitted
-program will hide/show topping inputs based on number of toppings
-program will have delete function if a mistake was made on order
+_Program will allow user enter name |
+Program will allow user to pick a type of pizza |
+program will allow user to pick a size of pizza |
+program will allow user to select toppings |
+program will clear form after info is submitted |
+program will hide/show topping inputs based on number of toppings |
+program will have delete function if a mistake was made on order | 
 program will submitted info will display on the screen_
 
 ## _Setup/Installation Requirements_
