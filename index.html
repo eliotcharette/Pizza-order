@@ -33,38 +33,19 @@
               <option>1 topping</option>
               <option>2 toppings ($1.00)</option>
               <option>3 toppings ($2.00)</option>
-              <option>Unlimited ($5.00)</option>
             </select>
           </div>
           <div class="form-group">
-            <h4><strong>Pick your toppings</strong></h4>
-            <select class="form-control" id="toppings">
-              <option>Cheese Only</option>
-              <option>Pepperoni</option>
-              <option>Margherita</option>
-              <option>Peppers</option>
-              <option>Olives</option>
-              <option>Salami</option>
-              <option>Onions</option>
-            </select>
+            <label>1 Topping</label>
+            <input type="text" class="form-control" id="1top">
           </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="flavor" value="chocolate">
-              Chocolate
-            </label>
+          <div class="form-group">
+            <label>2 Topping</label>
+            <input type="text" class="form-control" id="2top">
           </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="flavor" value="vanilla">
-              Vanilla
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="flavor" value="cookiesandcream">
-              Cookies
-            </label>
+          <div class="form-group">
+            <label>3 Topping</label>
+            <input type="text" class="form-control" id="3top">
           </div>
           <button type="submit" class="btn btn-success">Purchase</button>
         </form>
@@ -73,11 +54,12 @@
       <div class="col-md-6">
         <div id="show-order">
           <h2></h2>
-          <ul>
-            <li><strong>Thank you for your order, </strong><span id="listname"></span></li>
-            <li><span id="listsize"></span>, <span id="listnumber"></span>, <span id="listtoppings"></span></li>
-            <li>Your purchase total is:</li>
+            <p><strong>Thank you for your order, </strong><span id="listname"></span></p>
+            <p><span id="listsize"></span>, <span id="listnumber"></span></p>
+            <p>Toppings:</p>
+          <ul id="topping">
           </ul>
+          <p id="price">Your purchase total is:</p>
         </div>
       </div>
     </div>
