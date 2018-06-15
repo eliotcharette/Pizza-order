@@ -26,8 +26,10 @@ Pizza.prototype.price = function() {
   }
   return "Your purchase total is: $" + parseInt(this.size + this.number) + ".00";
 }
+
 //user interface
 $(document).ready(function () {
+//reset function
   function resetFields() {
     $("input#name").val("");
     $("select#size").val("");
@@ -36,6 +38,22 @@ $(document).ready(function () {
     $("input#2top").val("");
     $("input#3top").val("");
   }
+//topping fields hide/show
+  $("input#check1").change(function() {
+   $("#1top").show();
+   $("#2top").hide();
+   $("#3top").hide();
+});
+$("input#check2").change(function() {
+   $("#1top").show();
+   $("#2top").show();
+   $("#3top").hide();
+});
+$("input#check3").change(function() {
+ $("#1top").show();
+ $("#2top").show();
+ $("#3top").show();
+});
 //purchase button
   $("form#pizza-order").submit(function(event) {
     event.preventDefault();

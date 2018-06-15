@@ -29,41 +29,49 @@
             </select>
           </div>
           <div class="form-group">
-            <h4><strong>How many toppings would you like:</strong></h4>
-            <select class="form-control" id="number">
-              <option>1 topping</option>
-              <option>2 toppings ($1.00)</option>
-              <option>3 toppings ($2.00)</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Topping 1</label>
-            <input type="text" class="form-control" id="1top">
-          </div>
-          <div class="form-group">
-            <label>Topping 2</label>
-            <input type="text" class="form-control" id="2top">
-          </div>
-          <div class="form-group">
-            <label>Topping 3</label>
-            <input type="text" class="form-control" id="3top">
-          </div>
-          <button type="submit" class="btn btn-success">Purchase</button>
-        </form>
-        <h3 id="ordered"></h3>
+          <h4><strong>How many toppings would you like:</strong></h4>
+          <select class="form-control" id="number">
+          <option>1 topping</option>
+          <option>2 toppings ($1.00)</option>
+          <option>3 toppings ($2.00)</option>
+        </select>
       </div>
-      <div class="col-md-6">
-        <div id="show-order">
-          <h2></h2>
-            <p><strong>Thank you for your order, </strong><span id="listname"></span></p>
-            <p><span id="listsize"></span>, <span id="listnumber"></span></p>
-            <p>Toppings:</p>
-          <ul id="topping">
-          </ul>
-          <p id="price">Your purchase total is:</p>
-        </div>
+      <ul>
+      <li>1 Topping <input type="radio" id="check1" name="top"></li>
+      <li>2 Topping <input type="radio" id="check2" name="top"></li>
+      <li>3 Topping <input type="radio" id="check3" name="top"></li>
+      </ul>
+      <p class="fun">Go ahead and enter your ingredients, we got it all!</p>
+      <div class="tops">
+      <div class="form-group">
+        <label>Topping 1</label>
+        <input type="text" class="form-control" id="1top">
       </div>
+      <div class="form-group">
+        <label>Topping 2</label>
+        <input type="text" class="form-control" id="2top">
+      </div>
+      <div class="form-group">
+        <label>Topping 3</label>
+        <input type="text" class="form-control" id="3top">
+      </div>
+      </div>
+      <button type="submit" class="btn btn-success">Purchase</button>
+    </form>
+    <h3 id="ordered"></h3>
+  </div>
+  <div class="col-md-6">
+    <div id="show-order">
+      <h2></h2>
+      <p><strong>Thank you for your order, </strong><span id="listname"></span></p>
+      <p><span id="listsize"></span>, <span id="listnumber"></span></p>
+      <p>Toppings:</p>
+      <ul id="topping">
+      </ul>
+      <p id="price">Your purchase total is:</p>
     </div>
   </div>
+</div>
+</div>
 </body>
 </html>
